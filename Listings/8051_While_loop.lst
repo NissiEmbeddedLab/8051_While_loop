@@ -1,0 +1,38 @@
+C51 COMPILER V9.60.0.0   8051_WHILE_LOOP                                                   05/10/2020 18:02:00 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE 8051_WHILE_LOOP
+OBJECT MODULE PLACED IN .\Objects\8051_While_loop.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE 8051_While_loop.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Li
+                    -stings\8051_While_loop.lst) TABS(2) OBJECT(.\Objects\8051_While_loop.obj)
+
+line level    source
+
+   1          #include<reg51.h>
+   2          void main(void)
+   3          {
+   4   1        unsigned int n;
+   5   1        n=8;                        // Initialize n=8
+   6   1        while(n>=5)                 // Check wheather n is greater than or equal to 5
+   7   1        {
+   8   2          P1 = 0xAA;                // If n is greater or equal to 5 the value 0xAA is hold on PORT1
+   9   2          P2 = n;                   // The value of n moves th PORT 2
+  10   2          n--;                      // Decrement n by 1
+  11   2        }
+  12   1        P1 = 0x55;                  // If n becomes 5 it skip to this line then 0x55 is hold on PORT1
+  13   1      }
+  14            
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     24    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

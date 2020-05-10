@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\8051_While_loop.obj" 
+TO ".\Objects\8051_While_loop" 
+PRINT(".\Listings\8051_While_loop.m51") RAMSIZE(256) 
